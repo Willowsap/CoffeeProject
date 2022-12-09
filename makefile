@@ -22,8 +22,8 @@ test: $(JUNIT5_JAR)
 demo: bin/gui/Demo.class
 	java -cp .:bin gui/Demo
 
-check: mystyle.xml 
-	java $(CKSTYLE_COMMAND) -c ./mystyle.xml src/**/*.java
+check: style.xml 
+	java $(CKSTYLE_COMMAND) -c ./style.xml src/**/*.java
 
 clean:
 	rm -f *~
